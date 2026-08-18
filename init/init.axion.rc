@@ -310,3 +310,12 @@ on property:persist.sys.boot_completed=* && property:persist.sys.ax_touch_boost=
 on property:sys.boot_completed=1 && property:persist.sys.ax_disable_pwrhal=true && property:vendor.powerhal.init=1
     setprop vendor.powerhal.init 0
     restart vendor.power-hal-aidl
+
+on property:persist.sys.ax_debug_enabled=1
+    setprop service.adb.root 1
+    restart adbd
+
+on property:persist.sys.ax_debug_enabled=0
+    setprop service.adb.root 0
+    restart adbd
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Kernel Manager config — SM7125 / Atoll (Snapdragon 720G)
+    Xiaomi Redmi Note 9S / 9 Pro / 9 Pro Max / Poco M2 Pro (miatoll)
+
+      policy0 (cpu0-5, 6 cores Little - Cortex-A55)
+      policy6 (cpu6-7, 2 cores Big - Cortex-A76)
+
+      GPU: Adreno 618 (kgsl-3d0)
+-->
+<kernel-manager>
+
+    <cpu
+        id="little"
+        group="Silver CPU"
+        minId="axion_min_freq"
+        maxId="axion_max_freq"
+        governorId="little_cpu_governor"
+        minNode="/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq"
+        maxNode="/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq"
+        availablePath="/sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies"
+        governorNode="/sys/devices/system/cpu/cpufreq/policy0/scaling_governor"
+        governorAvailablePath="/sys/devices/system/cpu/cpufreq/policy0/scaling_available_governors" />
+
+    <cpu
+        id="big"
+        group="Gold CPU"
+        minId="axion_min_freq_big"
+        maxId="axion_max_freq_big"
+        governorId="big_cpu_governor"
+        minNode="/sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq"
+        maxNode="/sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq"
+        availablePath="/sys/devices/system/cpu/cpufreq/policy6/scaling_available_frequencies"
+        governorNode="/sys/devices/system/cpu/cpufreq/policy6/scaling_governor"
+        governorAvailablePath="/sys/devices/system/cpu/cpufreq/policy6/scaling_available_governors" />
+
+    <gpu
+        node="/sys/class/kgsl/kgsl-3d0/devfreq"
+        currentNode="/sys/class/kgsl/kgsl-3d0/gpuclk"
+        usageNode="/sys/class/kgsl/kgsl-3d0/gpu_busy_percentage"
+        frequencyMultiplier="1"
+        availablePath="/sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies"
+        values="180000000,267000000,355000000,430000000,565000000,650000000,800000000,825000000" />
+
+</kernel-manager>

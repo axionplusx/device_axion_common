@@ -21,3 +21,10 @@ TARGET_DOZE_TAP_PULSE_SUPPORTED ?= false
 TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED ?= false
 TARGET_DOZE_PICKUP_PULSE_SUPPORTED ?= false
 TARGET_DOZE_SIDE_FPS_PULSE_SUPPORTED ?= false
+
+# AxionFx
+TARGET_INCLUDE_AXFX ?= false
+
+# Axion Debugging (Disabled by default. Meant for debugging purposes - bootloop, aidl/hardware dependency by sepolicy failure, etc)
+TARGET_ENABLE_AX_DEBUG ?= false
+
