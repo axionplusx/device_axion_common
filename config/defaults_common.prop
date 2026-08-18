@@ -44,9 +44,11 @@ ro.egl.blobcache.multifile_limit=67108864
 debug.renderengine.backend=skiavkthreaded
 debug.hwui.renderer=skiavk
 
-# ram plus
+# ram plus & zram
 persist.sys.ax_rp_supp=true
 persist.sys.ax_rp_size_mb=0
 persist.sys.ax_rp_active_kb=0
 persist.sys.ax_rp_status=disabled
+persist.sys.ax_zram_size_mb=0
+
 
