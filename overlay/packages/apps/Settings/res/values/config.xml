@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2026 AxionOS
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- User avatar dialog result broadcast explicit package -->
+    <string name="config_avatar_picker_package" translatable="false">com.google.android.avatarpicker</string>
+
+    <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
+    <string name="config_wallpaper_picker_package" translatable="false">com.google.android.apps.wallpaper</string>
+    <string name="config_wallpaper_picker_class" translatable="false">com.google.android.apps.wallpaper.picker.CategoryPickerActivity</string>
+    <string name="config_styles_and_wallpaper_picker_class" translatable="false">com.google.android.apps.wallpaper.picker.CustomizationPickerActivity</string>
+
+    <!-- Settings intelligence package name -->
+    <string name="config_settingsintelligence_package_name" translatable="false">com.google.android.settings.intelligence</string>
+
+    <!-- Package Installer package name -->
+    <string name="config_package_installer_package_name" translatable="false">com.google.android.packageinstaller</string>
+
+    <!-- Sound picker package name -->
+    <string name="config_sound_picker_package_name" translatable="false">com.google.android.soundpicker</string>
+
+    <!-- Contacts package name -->
+    <string name="config_contacts_package_name" translatable="false">com.google.android.contacts</string>
+
+    <!-- Emergency app package name -->
+    <string name="config_emergency_package_name" translatable="false">com.google.android.apps.safetyhub</string>
+
+    <!-- Storage Manager settings enabled -->
+    <bool name="config_storage_manager_settings_enabled">true</bool>
+</resources>
